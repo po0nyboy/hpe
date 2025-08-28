@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Digital Wellbeing: Online Identity & Relationships</title>
+<style>
+/* Reset & Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f9f9;
+  color: #333;
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #4A90E2;
+  padding: 20px;
+  border-radius: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+h1.title {
+  color: #fff;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.1em;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.menu a:hover,
+.menu a.active {
+  background-color: #357ABD;
+  transform: scale(1.05);
+}
+
+/* Sections Styles */
+section {
+  display: none;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+section.active {
+  display: block;
+}
+
+/* Home Page Styles */
+.intro-section {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.intro {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.intro-image {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.intro-image:hover {
+  transform: scale(1.05);
+}
+
+/* Content Sections Styles */
+h2.section-heading {
+  margin-bottom: 15px;
+  color: #4A90E2;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.question {
+  background: #e0f7fa;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.question:hover {
+  background: #b2ebf2;
+}
+
+.answer {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.comic-strip {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.comic-image {
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.comic-image:hover {
+  transform: scale(1.05);
+}
+
+.caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+  color: #555;
+}
+
+.response {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff3e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h3 {
+  margin-bottom: 8px;
+  color: #00796b;
+}
+
+/* Personal Reflection */
+.response h3 {
+  font-size: 1.1em;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1 class="title">Digital Connections: Navigating Online Identity & Relationships</h1>
+  <nav>
+    <ul class="menu">
+      <li><a href="#" class="active" data-section="home">Home</a></li>
+      <li><a href="#" data-section="feature">Feature Article</a></li>
+      <li><a href="#" data-section="advice">Advice Column</a></li>
+      <li><a href="#" data-section="creative">Creative Corner</a></li>
+      <li><a href="#" data-section="reflection">Personal Reflection</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Home Page -->
+<section id="home" class="active">
+  <div class="intro-section">
+    <h2 class="subtitle">Understanding and nurturing your online identity and relationships</h2>
+    <p class="intro">Welcome to your guide on managing how you present yourself online and build healthy digital relationships. Our goal is to support you in creating a positive digital presence that reflects who you truly are.</p>
+    <div class="images-container">
+      <img src="https://images.unsplash.com/photo-1614289645504-7cd3f467b736?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Online Profile" class="intro-image"/>
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Digital Relationships" class="intro-image"/>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Article -->
+<section id="feature">
+  <h2 class="section-heading">Why Managing Your Online Identity & Relationships Matters</h2>
+  <p>In today's digital age, your online identity shapes how others perceive you and influences your real-life relationships. Managing your digital footprint helps you present yourself authentically while protecting your privacy.</p>
+  <p>Research indicates that over 70% of young people have experienced some form of online misrepresentation or misunderstanding (Source: Digital Youth Study, 2022). Building genuine digital relationships requires honesty, respect, and awareness of your online presence.</p>
+  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Online Identity Statistics" class="feature-image"/>
+  <h3>Key Facts & Statistics</h3>
+  <ul>
+    <li>Approximately 60% of teens edit or delete posts to improve their online image (Pew Research, 2021).</li>
+    <li>Nearly 80% of teens believe that their online reputation impacts their future opportunities (Common Sense Media, 2022).</li>
+  </ul>
+</section>
+
+<!-- Advice Column -->
+<section id="advice">
+  <h2 class="section-heading">Ask the Digital Wellbeing Coach</h2>
+
+  <div class="question">
+    <h3>Dear Wellbeing Coach,</h3>
+    <p>I'm worried about how much time I spend on social media. I feel like it's affecting my mood and my sleep. How can I cut back without missing out on my friends' updates?</p>
+    <div class="answer">
+      <p>Hi! Try setting specific time limits for social media using your device’s built-in settings or apps. Turn off notifications during study or sleep hours to minimize distractions. Remember, quality interactions matter more than quantity—focus on meaningful connections rather than endless scrolling!</p>
+    </div>
+  </div>
+
+  <div class="question">
+    <h3>Dear Wellbeing Coach,</h3>
+    <p>I often see people sharing personal details online that I think are too private. How can I protect my own privacy while still sharing enough to be social?</p>
+    <div class="answer">
+      <p>Great question! Be mindful of the information you share—avoid posting your exact location, contact details, or daily routines. Use privacy settings to control who sees your posts, and think twice before sharing anything you wouldn’t want a wider audience to see. Protecting your privacy helps you stay safe online!</p>
+    </div>
+  </div>
+
+  <div class="question">
+    <h3>Dear Wellbeing Coach,</h3>
+    <p>Sometimes I feel pressured to respond immediately to messages or comments. How do I manage this without feeling overwhelmed?</p>
+    <div class="answer">
+      <p>It’s okay to take your time! Set boundaries by letting friends know when you're unavailable. Use status updates or autoresponders if needed. Remember, your mental health comes first—it's better to respond thoughtfully rather than quickly and stressfully.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Creative Corner -->
+<section id="creative">
+  <h2 class="section-heading">A Day in the Life of a Mindful Digital User</h2>
+  <div class="comic-strip">
+    <img src="https://images.unsplash.com/photo-1614289645504-7cd3f467b736?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Morning Procrastination" class="comic-image"/>
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Setting Boundaries" class="comic-image"/>
+    <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Healthy Balance" class="comic-image"/>
+  </div>
+  <p class="caption">Follow Jamie as they learn to balance their online life with real-world wellbeing!</p>
+</section>
+
+<!-- Personal Reflection -->
+<section id="reflection">
+  <h2>My Digital Wellbeing Reflection</h2>
+  <div class="response">
+    <h3>1. What’s one thing I’ve learned about digital wellbeing?</h3>
+    <p>I’ve learned that being mindful of what I share online and setting boundaries helps protect my mental health and builds better relationships.</p>
+  </div>
+  <div class="response">
+    <h3>2. What’s one digital habit I’d like to improve or change?</h3>
+    <p>I want to reduce my screen time at night and avoid scrolling before bed to improve my sleep quality.</p>
+  </div>
+  <div class="response">
+    <h3>3. How could this change benefit my health and wellbeing?</h3>
+    <p>Getting better sleep and reducing stress will help me feel more energized, focused, and happier overall.</p>
+  </div>
+</section>
+
+<script>
+// Simple JavaScript for navigation
+const links = document.querySelectorAll('.menu a');
+const sections = document.querySelectorAll('section');
+
+links.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    // Remove active class from all links
+    links.forEach(l => l.classList.remove('active'));
+    // Add active to current
+    e.target.classList.add('active');
+
+    // Show the selected section
+    const target = e.target.getAttribute('data-section');
+    sections.forEach(sec => {
+      if (sec.id === target) {
+        sec.classList.add('active');
+      } else {
+        sec.classList.remove('active');
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>
